@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--[if lt IE 8]>
+           <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+       <![endif]-->
+        <title>HRM</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="resources/images/favicon.ico" />
+
+        <!--bootstrap css--> 
+        <link href="resources/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+
+        <link href="resources/css/loader.css" rel="stylesheet" />
+
+        <!--application css--> 
+        <link href="resources/css/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="node_modules/@angular/material/prebuilt-themes/indigo-pink.css" />
+
+    </head>
+    <body>
+    <app>
+        <div class="loading"></div>
+    </app>
+
+    <!--polyfill(s) for older browsers--> 
+    <script type="application/javascript" src="resources/js/jquery-1.12.0.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+    <script src="resources/js/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+
+
+    <script src="resources/js/global.js"></script>
+    <script src="https://cdn.ckeditor.com/4.7.3/full/ckeditor.js"></script>
+
+    <!--for production-->
+    <!--<script src="resources/js/bundle.js"></script>-->
+
+    <!--for dev build-->
+
+    <script src="resources/js/system.src.js"></script>
+    <script src="resources/js/systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function (err) {
+            console.error(err);
+        });
+    </script>
+
+    <!--for dev build end-->
+</body>
+</html>

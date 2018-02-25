@@ -1,0 +1,33 @@
+<nav *ngIf='showNavBar' class="navbar navbar-default header-navbar">
+    <section  id="header" class="dashboard-header-section">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- header left section -->
+                <ul class="dashboard-header-left-ul">
+                    <li> <img class="img-responsive margin-left-20px" src="resources/images/logo.png" alt="Logo"></li>
+                    <li><div class="achor-holder hrm-name">ABC Express</div></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <!-- header right section -->
+                <ul class="dashboard-header-right-ul">
+                    <li>
+                        <div class="btn-group">
+                            <div class="btn-group">
+                                <button type="button" class="dashboard-header-right-ul-button dropdown-toggle" data-toggle="dropdown">
+                                    Welcome, <span class="caret"></span><br>
+                                    <span>Alamgir Kabir</span></button>
+                                <ul class="dropdown-menu pull-right" role="menu">
+                                    <!--<li><a href="#" (click)="goProfile($event)">Profile</a></li>-->
+                                    <li><a href="#" >Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li> <img class="img-responsive margin-left-20px" src="resources/images/user.png" alt="Logo"/></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</nav>
+<angular-loader></angular-loader>
